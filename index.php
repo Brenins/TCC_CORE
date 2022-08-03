@@ -21,7 +21,7 @@
         </div>
         <div class="menu">
             <div class="dropdown">
-                <button class="dropbtn rounded">Cadastros</button>
+                <button class="dropbtn rounded-pill">Cadastros <i class="bi bi-plus-circle"></i></button>
                 <div class="dropdown-conteudo rounded">
                     <a href="#">Cadastro de Moradores</a>
                     <a href="#">Cadastro de Itens</a>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn rounded">Itens e Locais</button>
+                <button class="dropbtn rounded-pill">Itens e Locais <i class="bi bi-shop"></i></button>
                 <div class="dropdown-conteudo rounded">
                     <a href="#">Lista de Itens</a>
                     <a href="#">Lista de Moradores</a>
@@ -37,14 +37,14 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn rounded">Reservas e Emprestimos</button>
+                <button class="dropbtn rounded-pill">Reservas e Emprestimos <i class="bi bi-archive"></i></button>
                 <div class="dropdown-conteudo rounded">
                     <a href="#">Controle de Reservas</a>
                     <a href="#">Controle de Emprestimos</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn rounded">Relatorios</button>
+                <button class="dropbtn rounded-pill">Relatorios <i class="bi bi-clipboard-pulse"></i></button>
                 <div class="dropdown-conteudo rounded">
                     <a href="#">Itens em Emprestimo</a>
                     <a href="#">Reservas em Andamento</a>
@@ -54,10 +54,10 @@
         </div>
         <div class="opcoes">
         <div class="dropdown">
-                <button class="dropbtn rounded">Perfil <i class="bi bi-person-fill"></i></button>
+                <button class="dropbtn rounded-pill">Breno <i class="bi bi-person-fill"></i></button>
                 <div class="dropdown-conteudo rounded ">
                     <a href="#">Alterar Senha</a>
-                    <a href="#">Sair do Sistema</a>
+                    <a href="#">Sair <i class="bi bi-power"></i></a>
                 </div>
             </div>
         </div>
