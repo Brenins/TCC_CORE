@@ -10,17 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/551191981e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="images/represt.ico">
     <link rel="stylesheet" href="css/index.css">
-    <title>REPREST - HOME</title>
+    <title>REPREST - DASHBOARD</title>
 </head>
 <body>
     <div class="navbar">
         <div class="logo">
-            <img src="images/logoteste1.png" alt="">
+            <a href="#"><img src="images/logoteste.png" alt="REPREST"></a>
         </div>
         <div class="menu">
             <div class="dropdown">
-                <button class="dropbtn rounded btn btn-primary">Cadastros</button>
+                <button class="dropbtn rounded">Cadastros</button>
                 <div class="dropdown-conteudo rounded">
                     <a href="#">Cadastro de Moradores</a>
                     <a href="#">Cadastro de Itens</a>
@@ -28,7 +29,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn rounded btn btn-primary">Itens e Locais</button>
+                <button class="dropbtn rounded">Itens e Locais</button>
                 <div class="dropdown-conteudo rounded">
                     <a href="#">Lista de Itens</a>
                     <a href="#">Lista de Moradores</a>
@@ -36,14 +37,14 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn rounded btn btn-primary">Reservas e Emprestimos</button>
+                <button class="dropbtn rounded">Reservas e Emprestimos</button>
                 <div class="dropdown-conteudo rounded">
                     <a href="#">Controle de Reservas</a>
                     <a href="#">Controle de Emprestimos</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn rounded btn btn-primary">Relatorios</button>
+                <button class="dropbtn rounded">Relatorios</button>
                 <div class="dropdown-conteudo rounded">
                     <a href="#">Itens em Emprestimo</a>
                     <a href="#">Reservas em Andamento</a>
@@ -53,7 +54,7 @@
         </div>
         <div class="opcoes">
         <div class="dropdown">
-                <button class="dropbtn rounded btn btn-success">Perfil <i class="bi bi-person-fill"></i></button>
+                <button class="dropbtn rounded">Perfil <i class="bi bi-person-fill"></i></button>
                 <div class="dropdown-conteudo rounded ">
                     <a href="#">Alterar Senha</a>
                     <a href="#">Sair do Sistema</a>

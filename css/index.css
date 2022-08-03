@@ -5,7 +5,7 @@
 }
 
 .navbar{
-    background-color: #EED180;
+    background-color: #2C3333;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -16,6 +16,7 @@
 /* Style The Dropdown Button */
 .dropbtn {
     color: white;
+    background-color: #395B64;
     padding: 16px;
     font-size: 16px;
     border: none;
