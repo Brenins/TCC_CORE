@@ -16,7 +16,7 @@
 <body>
     <div class="navbar">
         <div class="logo">
-            <img src="images/logoteste.png" alt="">
+            <img src="images/logoteste1.png" alt="">
         </div>
         <div class="menu">
             <div class="dropdown">
