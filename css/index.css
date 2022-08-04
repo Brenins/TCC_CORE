@@ -11,6 +11,11 @@
     justify-content: space-evenly;
 }
 
+.corpo{
+  width: 100%;
+  height: 87vh;
+  background-color: #395b648e;
+}
 
 /* Style The Dropdown Button */
 .dropbtn {
