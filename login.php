@@ -1,4 +1,5 @@
 <?php
+    require "config.php";
     //validação dos dados
     if ( $_POST ) {
         //recuperar login e senha
@@ -23,9 +24,9 @@
         }
 
         //selecionar os dados do banco
-        $sql = "select id, nome, login, senha 
+        $sql = "select usuario_id,login, senha 
             from usuario
-            where login = :login AND ativo = 'S'
+            where login = :login AND ativo = '1'
             limit 1";
         $consulta = $pdo->prepare($sql);
         $consulta->bindParam(":login", $login);
@@ -34,18 +35,17 @@
         $dados = $consulta->fetch(PDO::FETCH_OBJ);
 
         //verificar se trouxe resultado
-        if ( !isset( $dados->id ) ) {
+        if ( !isset( $dados->usuario_id ) ) {
             mensagemErro("Usuário não encontrado ou inativado");
         } else if ( !password_verify($senha,$dados->senha)){
             mensagemErro("Senha incorreta");
         }
 
         //guardar as informações na sessao
-        $_SESSION["usuario"] = array("id"=>$dados->id,
-            "nome"=>$dados->nome,
+        $_SESSION["usuario"] = array("id"=>$dados->usuario_id,
             "login"=>$dados->login);
         //direcionar para uma página home
-        echo "<script>location.href='paginas/home';</script>";
+        echo "<script>location.href='home.php';</script>";
         exit;
 
     } // fim do POST
@@ -66,6 +66,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="icon" type="image/x-icon" href="images/represt.ico">
     <link rel="stylesheet" href="css/telaLogin.css">
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <title>REPREST - LOGIN</title>
 </head>
 <body>
@@ -86,7 +88,6 @@
                 <button type="submit" class="btn btn-success rounded-pill"><i class="bi bi-box-arrow-in-right"></i> Efetuar Login</button>
             </div>
             </form>
-            
         </div>
     </div>
 </body>
